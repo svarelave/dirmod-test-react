@@ -1,0 +1,103 @@
+// Input
+
+label {
+  color: $black;
+}
+
+.form-group {
+  &.is-required .form-control {
+    display: inline-block;
+    width: 90%;
+  }
+
+  &.is-required:after {
+    content: "*";
+    color: $orange;
+    vertical-align: top;
+    font-size: 20px;
+    margin-left: 5px;
+  }
+}
+
+input.form-control {
+  border-radius: 3px;
+  background-color: $input !important;
+  outline: 0px !important;
+  box-shadow: none !important;
+  border: 0px !important;
+  font-size: 14px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  &.input-white {
+    background-color: $white !important;
+  }
+  &.input-gray {
+    background-color: $gray !important;
+  }
+  &.input-arrow {
+    background-image: url("../../icons/arrow-left-black.svg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 14px 16px;
+    background-position: 98% 50%;
+    border-radius: 0px !important;
+    background-color: transparent !important;
+    outline: 0px !important;
+    box-shadow: none !important;
+    border-top-width: 0px !important;
+    border-left-width: 0px !important;
+    border-right-width: 0px !important;
+    border-bottom-color: #000 !important;
+    border-bottom-width: 1px !important;
+    border-bottom-style: solid !important;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+    font-size: 18px;
+    font-family: $font-family-bold !important;
+  }
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+  border-color: $green;
+  background-color: $green;
+}
+
+.form-table {
+  display: table;
+  width: 100%;
+
+  &-row {
+    display: table-row;
+    width: 100%;
+
+    &:last-child {
+      .form-table-cell {
+        border-bottom: none !important;
+      }
+    }
+  }
+  &-cell {
+    display: table-cell;
+    border-bottom: 1px solid !important;
+
+    select {
+      width: 100%;
+    }
+  }
+  &-label {
+    width: 100%;
+    border-right: 1px solid;
+    padding-left: 1rem;
+    background-color: $gray;
+  }
+  input,
+  select {
+    border: none;
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+  .input-datepicker {
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+}

@@ -1,0 +1,41 @@
+// Tabs
+
+.container-tabs {
+	background-color: $gray;
+	border-radius: 3px;
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: space-around;
+	@media (max-width: 650px) {
+		flex-direction: column;
+	}
+	.tab-item {
+		width: 100%;
+		text-align: center;
+		padding-top: 8px;
+		padding-bottom: 8px;
+		cursor: pointer;
+		&:nth-child(1) {
+			border-bottom-left-radius: 3px;
+			border-top-left-radius: 3px;
+			@media (max-width: 650px) {
+				border-radius: 0px;
+				border-top-right-radius: 3px;
+				border-top-left-radius: 3px;
+			}
+		}
+		&:last-child {
+			border-bottom-right-radius: 3px;
+			border-top-right-radius: 3px;
+			@media (max-width: 650px) {
+				border-radius: 0px;
+				border-bottom-right-radius: 3px;
+				border-bottom-left-radius: 3px;
+			}
+		}
+		&.tab-selected {
+			background-color: $blue;
+			color: $white;
+		}
+	}
+}

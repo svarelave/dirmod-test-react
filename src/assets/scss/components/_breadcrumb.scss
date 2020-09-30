@@ -1,0 +1,39 @@
+.breadcrumb-custom {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+
+  &-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 12px;
+      height: 12px;
+    }
+    a {
+      color: black;
+      background-color: $gray-two;
+      padding: 0.2rem 0.3rem;
+      border-radius: 5px;
+      margin-right: 0.2rem;
+      margin-left: 0.3rem;
+    }
+  }
+  // .breadcrumb-item {
+  //   color: black !important;
+  //   background-color: $secondary;
+  //   margin: 0.3rem;
+  //   border-radius: 3px;
+  //   padding: 0.2rem;
+  // }
+
+  // .breadcrumb-item + .breadcrumb-item::before {
+  //   content: url("../../icons/arrow-right.svg") !important;
+  //   width: 19px;
+  //   height: 19px;
+  // }
+}

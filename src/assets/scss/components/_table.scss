@@ -1,0 +1,51 @@
+// Table
+
+.table-component {
+  background-color: $white;
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+  thead {
+    border-bottom: 1px solid $gray;
+    th {
+      border: 0px !important;
+    }
+  }
+  tbody {
+    tr {
+      border-bottom: 1px solid $gray;
+    }
+    td {
+      button {
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+.no-table-data {
+  // font-family: 'Roboto Bold Italic';
+  font-size: 18px;
+  background-color: $white;
+  border-radius: 2px;
+  text-align: center;
+  padding: 10px;
+  color: $blue;
+}
+
+.table-container {
+  @include shadow();
+}
+
+.table {
+  &.costs {
+    td {
+      padding: 0.1rem 0.75rem;
+      vertical-align: middle;
+
+      input {
+        background-color: $white !important;
+        text-align: right;
+      }
+    }
+  }
+}

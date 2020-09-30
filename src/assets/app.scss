@@ -1,0 +1,40 @@
+// Plugins
+@import "../../node_modules/react-datepicker/src/stylesheets/datepicker";
+
+// Archivo Principal
+
+@import "scss/base/variables";
+@import "scss/base/fonts";
+@import "scss/base/mixins";
+@import "scss/base/base";
+@import "scss/base/menu";
+
+// Components
+
+@import "scss/components/button";
+@import "scss/components/header";
+@import "scss/components/sidebar";
+@import "scss/components/input";
+@import "scss/components/card";
+@import "scss/components/table";
+@import "scss/components/title";
+@import "scss/components/textarea";
+@import "scss/components/card-title";
+@import "scss/components/pagination";
+@import "scss/components/modal";
+@import "scss/components/select";
+@import "scss/components/datepicker";
+@import "scss/components/list";
+@import "scss/components/tabs";
+@import "scss/components/text";
+@import "scss/components/breadcrumb";
+@import "scss/components/alert";
+@import "scss/components/calendar";
+@import "scss/components/event";
+@import "scss/components/badge";
+@import "scss/components/image";
+@import "scss/components/footer";
+@import "scss/components/rich-editor";
+
+// Screens
+@import "scss/screens/prices";

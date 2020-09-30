@@ -1,0 +1,96 @@
+.container-menu {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu {
+  height: calc(100vh - 93.38px);
+  @media (max-width: 767px) {
+    display: none;
+  }
+  background-color: $sidear-color;
+  width: 240px;
+  position: relative;
+  .container-user {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    width: 80%;
+    img {
+      width: 50px;
+      height: 50px;
+      border-radius: 100px;
+      margin-right: 20px;
+      object-fit: cover;
+    }
+    h2 {
+      color: $white;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+  }
+  .btn-logout {
+    color: $white !important;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 20px;
+    box-shadow: none !important;
+    border: 0px !important;
+    outline: 0px !important;
+  }
+  ul {
+    padding: 0px !important;
+    list-style: none;
+    li {
+      margin-top: 0.4rem;
+      margin-left: 0.3rem;
+      margin-right: 0.3rem;
+      border-radius: 6px;
+      background-color: white;
+
+      &.active-module {
+        .label-submodule {
+          display: flex;
+          align-items: center;
+          color: $black !important;
+          background-image: url("../../icons/menu-item-active.svg");
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+      }
+      &.active {
+        background-color: $primary;
+        a {
+          color: $white !important;
+          .cls-1 {
+            fill: white !important;
+          }
+        }
+      }
+      a,
+      .label-submodule {
+        color: $black !important;
+        text-decoration: none !important;
+        padding: 6px 15px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        .badge {
+          background-color: $blue;
+          margin-left: 10px;
+          border-radius: 30px;
+        }
+        i {
+          position: absolute;
+          right: 10px;
+        }
+      }
+
+      .label-submodule {
+        cursor: pointer;
+        align-items: initial;
+      }
+    }
+  }
+}

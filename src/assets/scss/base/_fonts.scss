@@ -1,0 +1,58 @@
+@font-face {
+  font-family: $font-family;
+  src: url($fonts-path+$font-family+"-Regular.otf");
+}
+
+@font-face {
+  font-family: $font-family-bold;
+  src: url($fonts-path+$font-family+"-Bold.otf");
+}
+
+@font-face {
+  font-family: $font-family-black;
+  src: url($fonts-path+$font-family+"-Black.ttf");
+}
+
+@font-face {
+  font-family: $font-family-heavy;
+  src: url($fonts-path+$font-family+"-Heavy.otf");
+}
+
+.font-bold {
+  font-family: $font-family-bold !important;
+}
+
+.font-black {
+  font-family: $font-family-black !important;
+}
+
+.font-heavy {
+  font-family: $font-family-heavy !important;
+}
+
+.font-size {
+  &-sm {
+    font-size: 0.9rem !important;
+  }
+  &-md {
+    font-size: 1.3rem !important;
+  }
+  &-lg {
+    font-size: 1.5rem !important;
+  }
+  &-xlg {
+    font-size: 2rem !important;
+  }
+}
+
+.font-code {
+  font-size: 1.4rem !important;
+}
+
+.lg-1 {
+  line-height: 1;
+}
+
+.border-orange {
+  border-color: $orange !important;
+}

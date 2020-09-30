@@ -1,0 +1,53 @@
+// Card
+
+.card {
+  // border: 1px solid $orange;
+  border-radius: 3 3 3 3 !important;
+
+  &.border-orange {
+    border-color: $orange;
+  }
+
+  &.wrapper-register {
+    max-width: 650px !important;
+    max-height: 450px;
+    overflow: scroll;
+  }
+
+  @media (min-width: 768px) {
+    &.wrapper-register {
+      max-height: none;
+      overflow: hidden;
+    }
+  }
+
+  $br-card-custom: 1px;
+
+  &-custom {
+    border-radius: $br-card-custom;
+    border: 1px solid;
+    width: 100%;
+    background-color: white;
+
+    &-header {
+      border-top-left-radius: $br-card-custom;
+      border-top-right-radius: $br-card-custom;
+    }
+
+    &-title {
+      font-size: 1.3rem;
+    }
+
+    &-footer {
+      background-color: $sidear-color;
+      border-bottom-right-radius: $br-card-custom;
+      border-bottom-left-radius: $br-card-custom;
+    }
+
+    &.bg-gray {
+      .form-control {
+        background-color: $white !important;
+      }
+    }
+  }
+}

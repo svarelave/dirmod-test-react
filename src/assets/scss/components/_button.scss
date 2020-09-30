@@ -1,0 +1,120 @@
+// Button
+
+.button-rounded {
+  border-radius: 20px !important;
+}
+
+.btn-primary {
+  border-radius: 3px;
+  color: #fff !important;
+  min-width: 120px;
+  outline: 0px !important;
+  border: 0px !important;
+  box-shadow: none !important;
+  font-size: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.btn-blue {
+  background-color: $blue !important;
+}
+
+.btn-green {
+  background-color: $green !important;
+}
+
+.btn-block {
+  width: 100%;
+}
+
+.btn-orange {
+  background-color: $orange;
+  border-radius: 3px;
+  color: #fff;
+  min-width: 120px;
+  outline: 0px;
+  border: 0px;
+  box-shadow: none;
+  font-size: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+
+  &:hover {
+    color: $white;
+  }
+}
+
+.btn-outline {
+  border: 1px solid $gray !important;
+  background-color: transparent !important;
+  min-width: auto !important;
+  border-radius: 3px !important;
+  color: $black;
+  border: 1px solid $orange !important;
+
+  &:hover {
+    color: $black !important;
+  }
+}
+
+.btn-outline-orange {
+  border: 1px solid $orange;
+  border-color: $orange;
+  color: $orange;
+  font-weight: bold;
+}
+
+.btn-outline-orange:focus {
+  box-shadow: 0 0 0 0.2rem #f2692a36 !important;
+}
+
+.btn-red {
+  background-color: $danger !important;
+}
+
+.btn-green {
+  background-color: $green !important;
+}
+
+.btn-small {
+  padding: 5px !important;
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+  font-size: 12px !important;
+  min-width: 30px !important;
+}
+
+.btn-lg {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.3rem !important;
+
+  &-custom {
+    padding: 0.5rem 1.5rem;
+  }
+}
+
+.btn-xl {
+  padding: 0.3rem 4rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.3rem;
+}
+
+.btn-align-bottom {
+  @media (min-width: 768px) {
+    margin-top: 32.5px;
+  }
+  margin-bottom: 15px;
+}
+
+.shadow-button {
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.55) !important;
+}
+
+.float-button-right {
+  position: absolute;
+  right: 25px;
+}

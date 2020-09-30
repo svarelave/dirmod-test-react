@@ -1,0 +1,64 @@
+.text-orange {
+  color: $orange;
+}
+
+.text-black {
+  color: $black;
+}
+
+.text-green {
+  color: $green;
+}
+
+.text-ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 200px;
+  overflow: hidden;
+}
+
+.min-subtitle {
+  font-size: 0.8rem;
+}
+
+.subtitle {
+  color: $primary;
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+h2 {
+  &.vertical-line {
+    &.dash {
+      &:before {
+        left: 25% !important;
+        width: calc(75% - 10%) !important;
+      }
+    }
+
+    &:before {
+      content: "";
+      border-top: 1px solid $primary;
+      margin: 0 auto;
+      position: absolute;
+      top: 60%;
+      left: 10%;
+      right: 0;
+      bottom: 0;
+      width: calc(95% - 10%);
+    }
+  }
+}
+
+.underline {
+  text-decoration: underline !important;
+}
+
+@media (max-width: 767px) {
+  h2 {
+    &.vertical-line:before {
+      display: none;
+    }
+  }
+}

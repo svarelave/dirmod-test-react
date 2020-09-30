@@ -1,0 +1,24 @@
+// List
+
+// .strong-item-list {
+// font-family: 'Roboto Bold';
+// }
+
+.list-group-item {
+  img {
+    margin-right: 15px;
+  }
+}
+
+.list {
+  &-items {
+    max-height: 300px;
+    overflow: auto;
+  }
+}
+
+.item-stripped {
+  &:nth-child(even) {
+    background-color: $gray;
+  }
+}

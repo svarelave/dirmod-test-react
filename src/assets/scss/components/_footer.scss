@@ -1,0 +1,12 @@
+// Footer
+
+footer {
+  width: 100%;
+  transition: var(--secs);
+  z-index: 0;
+
+  span {
+    display: flex;
+    justify-content: center;
+  }
+}
